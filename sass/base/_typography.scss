@@ -1,26 +1,49 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    color : #f1f1f1;
-	}
-/* Declare text styles */
-h1, h2, p {
-  /* Font minimum, preferred and maximum value */
-  font-size: clamp(var(--min), var(--val), var(--max));
+html{
+  font-size: 16px;
+
+  @media only screen and (min-width: 576px) {    
+      font-size: 18px;    
+}
+  @media only screen and (min-width: 768px) {    
+      font-size: 20px;    
+}
 }
 
-/* Font size variables */
-h1 {
-  --min: 2em; /* minimum value */
-  --val: 5vw; /* preferred value = 5% viewport width */
-  --max: 3em; /* maximum value */
+body{
+    font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
+    color : #39454b;
+    font-size: 1rem;
+    font-weight: 300;
+	}
+
+.logo {  
+  font-weight: 900;
 }
-h2 {
-  --min: 1.5em;   /* minimum value */
-  --val: 4vw;     /* preferred value = 4% viewport width */
-  --max: 2.25em;  /* maximum value */
-}
-p {
-  --min: 1em;   /* minimum value */
-  --val: 2.5vw; /* preferred value = 2.5% viewport width */
-  --max: 1.5em; /* maximum value */
-}
+
+
+
+
+// /* Declare text styles */
+// h1, h2, p {
+//   /* Font minimum, preferred and maximum value */
+//   font-size: clamp(var(--min), var(--val), var(--max));
+// }
+
+// /* Font size variables */
+// h1 {
+//   --min: 2em; /* minimum value */
+//   --val: 5vw; /* preferred value = 5% viewport width */
+//   --max: 3em; /* maximum value */
+// }
+// h2 {
+//   --min: 1.5em;   /* minimum value */
+//   --val: 4vw;     /* preferred value = 4% viewport width */
+//   --max: 2.25em;  /* maximum value */
+// }
+// p {
+//   --min: 1em;   /* minimum value */
+//   --val: 2.5vw; /* preferred value = 2.5% viewport width */
+//   --max: 1.5em; /* maximum value */
+// }
+
+
