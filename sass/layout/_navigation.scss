@@ -1,7 +1,5 @@
 nav {
   position: fixed;
-  display: flex;
-  justify-content: space-between;
   width: 100%;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.95);
@@ -9,18 +7,23 @@ nav {
   padding: 0 10px;
 
   #nav-icon {
+    position: absolute;
+    top: 5px;
+    right: 10px;
     width: 20px;
     padding-top: 8px;
   }
   .logo {
-    padding : 15px 30px 15px 0;
+    padding: 15px 30px 15px 0;
   }
   .nav-menu {
     display: none;
+    width: 100%;
 
     li {
       padding: 3px 0;
       cursor: pointer;
+      text-align: center;
       &:hover {
         background-color: rgba(57, 69, 75, 0.7);
         color: rgba(255, 255, 255, 0.95);
@@ -31,32 +34,30 @@ nav {
     display: block;
   }
 }
-  // Responsive
+// Responsive
 
-  @media only screen and (min-width: 768px){
-    nav{
-      .nav-list {
-        display: flex ;
-        justify-content: space-between;
-        width: 100%;
-      }
-      .nav-list-2li{
-        flex-grow: 4; 
-      }
-      .nav-menu {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-      }
-      .nav-item {
-          padding: 15px 10px !important;
-          line-height: 50px;
-
-      }
-      #nav-icon {
-        display: none;
-      }
+@media only screen and (min-width: 768px) {
+  nav {
+    .nav-list {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
     }
-}
- 
+    .logo {
+      min-width: 28%;
+    }
 
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .nav-item {
+      padding: 15px 10px !important;
+      line-height: 50px;
+    }
+    #nav-icon {
+      display: none;
+    }
+  }
+}

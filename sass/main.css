@@ -91,12 +91,6 @@ body {
 
 nav {
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 100%;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.95);
@@ -105,6 +99,9 @@ nav {
 }
 
 nav #nav-icon {
+  position: absolute;
+  top: 5px;
+  right: 10px;
   width: 20px;
   padding-top: 8px;
 }
@@ -115,11 +112,13 @@ nav .logo {
 
 nav .nav-menu {
   display: none;
+  width: 100%;
 }
 
 nav .nav-menu li {
   padding: 3px 0;
   cursor: pointer;
+  text-align: center;
 }
 
 nav .nav-menu li:hover {
@@ -141,10 +140,8 @@ nav .display-on {
             justify-content: space-between;
     width: 100%;
   }
-  nav .nav-list-2li {
-    -webkit-box-flex: 4;
-        -ms-flex-positive: 4;
-            flex-grow: 4;
+  nav .logo {
+    min-width: 28%;
   }
   nav .nav-menu {
     display: -webkit-box;
