@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
     <title>PhotoSub Nouméa</title>
     <link rel="stylesheet" href="/sass/main.css" />
     
@@ -14,11 +18,12 @@
         <div class="nav-list">
         <h2 class="logo">Photo-sub Nouméa</h2>
         <ul class="nav-menu">
-          <li class="nav-item"><a href="#home">Accueil</a></li>
-          <li class="nav-item"><a href="#">L'équipe</a></li>
-          <li class="nav-item"><a href="#">Activitées</a></li>
-          <li class="nav-item"><a href="#">Gallerie</a></li>
-          <li class="nav-item"><a href="#">Contact</a></li>
+          <li class="nav-item" id="btn-home" onclick="scrollFromMenu(0)">Accueil</li>
+          <li id="btn-team" class="nav-item" onclick="scrollFromMenu(1)">L'équipe</li>
+          <li id="btn-work" class="nav-item" onclick="scrollFromMenu(2)">Activités</li>
+          <li id="btn-news" class="nav-item" onclick="scrollFromMenu(3)">Actualité</li>
+          <li id="btn-gallery" class="nav-item" onclick="scrollFromMenu(4)">Gallerie</li>
+          <li id="btn-contact" class="nav-item"><a href="#contact"></a>Contact</li>
           <li class="nav-item"><a href="#">Evènements</a></li>
         </ul>
       </div>
@@ -26,31 +31,66 @@
           ><img src="./ressources/icon/bars-solid.svg" alt="menu"
         /></a>
       </nav>
-      <main>
-        <section id="home">
-          
-        </section>
-      </main>
     </header>
+    <main>
+      <section id="home">
+        <div class="home-content">
+          <h1 class="home-title">Photo-sub Nouméa</h1>
+          <p class="home-welcome"></p>
+          <p class= "home-p">L'association des amoureux de la photographie sous-marine de Nouvelle Calédonie</p>
+        </div>
+      </section>
+      <section id="team" class="index-section">
+        <article class="team-container">
+          <div class="team-content article-content">
+            <h2 class="team-title">l'équipe</h1>
+            <p class="article-p team-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero voluptates illo possimus vel minus quis fuga. Doloremque minima quo, fugiat asperiores, quisquam, cum a voluptatem qui dolores in nihil distinctio. <br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+            <div class="team-btn btn-plus"><a href="#"><img src="/ressources/icon/plus-gold-plus-plus.svg" alt="plus d'info"></a></div>
+          </div>
+        </article>
+      </section>
+      <section id="work" class="index-section">
+        <article class="work-container">
+          <div class="work-content article-content">
+            <h2 class="work-title">nos activités</h1>
+            <p class="article-p work-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam neque soluta quaerat odio dolorem nihil blanditiis numquam labore officiis maiores eos quam illo ea iusto magni. <br>
+            Accusamus praesentium odio modi impedit optio, neque nam eos est rem similique quos excepturi incidunt ipsa totam eaque error fugit officiis doloremque quibusdam...</p>
+            <div class="work-btn btn-plus"><a href="#"><img src="/ressources/icon/plus-gold-plus-plus.svg" alt="plus d'info"></a></div>
+          </div>
+        </article>
+      </section>
+      <section id="news" class="index-section">
+        <article class="news-container">
+          <div class="news-content article-content">
+            <h2 class="news-title">Actualités</h1>
+            <p class="article-p work-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+            Ullam neque soluta quaerat odio dolorem nihil blanditiis numquam labore officiis maiores eos quam illo ea iusto magni. <br>
+            Accusamus praesentium odio modi impedit optio, neque nam eos est rem similique quos excepturi incidunt ipsa totam eaque error fugit officiis doloremque quibusdam...</p>
+            <div class="news-btn btn-plus"><a href="#"><img src="/ressources/icon/plus-gold-plus-plus.svg" alt="plus d'info"></a></div>
+          </div>
+        </article>
+      </section>
+      <section id="gallery">
+        <div class="gallery-container">
+          
+        </div>
+      </section>
+      <section id="gallery">
+        <div class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide"><img src="./ressources/img/gallery1-md.jpg" alt=""></li>
+              <li class="splide__slide"><img src="./ressources/img/gallery2-md.jpg" alt=""></li>
+              <li class="splide__slide"><img src="./ressources/img/gallery3-md.jpg" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+    </main>
 
     <script src="/js/index.js"></script>
   </body>
 </html>
-
-
-<!-- <nav>
-  <ul class="nav-list">
-  <li><h2 class="logo">Photo-sub Nouméa</h2></li>
-  <li class="nav-list-2li"><ul class="nav-menu">
-    <li class="nav-item"><a href="#home">Accueil</a></li>
-    <li class="nav-item"><a href="#">L'équipe</a></li>
-    <li class="nav-item"><a href="#">Activitées</a></li>
-    <li class="nav-item"><a href="#">Gallerie</a></li>
-    <li class="nav-item"><a href="#">Contact</a></li>
-    <li class="nav-item"><a href="#">Evènements</a></li>
-  </ul></li>
-</ul>
-  <a href="#" id="nav-icon"
-    ><img src="./ressources/icon/bars-solid.svg" alt="menu"
-  /></a>
-</nav> -->

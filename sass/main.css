@@ -66,7 +66,7 @@ html {
   font-size: 16px;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width: 768px) {
   html {
     font-size: 18px;
   }
@@ -82,11 +82,37 @@ body {
   font-family: Source Sans Pro, Arial, Helvetica, sans-serif;
   color: #39454b;
   font-size: 1rem;
+  line-height: 1.5em;
   font-weight: 300;
 }
 
-.logo {
+h1 {
+  font-size: 3rem;
   font-weight: 900;
+  line-height: 1.3em;
+  letter-spacing: -0.05em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  letter-spacing: -0.05em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.5em;
+  letter-spacing: 0.04em;
+}
+
+header .logo {
+  font-weight: 900;
+  font-size: 0.8rem;
+  letter-spacing: -0.05em;
+}
+
+main #home {
+  color: white;
 }
 
 nav {
@@ -116,7 +142,7 @@ nav .nav-menu {
 }
 
 nav .nav-menu li {
-  padding: 3px 0;
+  padding: 10px 0;
   cursor: pointer;
   text-align: center;
 }
@@ -141,7 +167,7 @@ nav .display-on {
     width: 100%;
   }
   nav .logo {
-    min-width: 28%;
+    padding-top: 25px;
   }
   nav .nav-menu {
     display: -webkit-box;
@@ -159,6 +185,96 @@ nav .display-on {
   }
   nav #nav-icon {
     display: none;
+  }
+}
+
+#home {
+  height: 100vh;
+  width: 100%;
+  background: center/cover no-repeat url(/ressources/img/accueil-md.jpg);
+}
+
+#home .home-content {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 200px;
+  text-align: center;
+}
+
+#home .home-content p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#home .home-title {
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 992px) {
+  #home {
+    background-image: url(/ressources/img/accueil.jpg);
+  }
+}
+
+.index-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: center / cover no-repeat;
+  background-image: url(/ressources/img/equipe-md.jpg);
+}
+
+.index-section article {
+  width: 80%;
+  margin: auto 0;
+  background-color: white;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+.index-section .btn-plus {
+  margin: 15px auto 0 auto;
+  height: 40px;
+  width: 40px;
+}
+
+.index-section h2 {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#team {
+  background-image: url(/ressources/img/equipe-md.jpg);
+}
+
+@media screen and (min-width: 992px) {
+  #team {
+    background-image: url(/ressources/img/equipe.jpg);
+  }
+}
+
+#work {
+  background-image: url(/ressources/img/activites-md.jpg);
+}
+
+@media screen and (min-width: 992px) {
+  #work {
+    background-image: url(/ressources/img/activites.jpg);
+  }
+}
+
+#news {
+  background-image: url(/ressources/img/news-md.jpg);
+}
+
+@media screen and (min-width: 992px) {
+  #news {
+    background-image: url(/ressources/img/news.jpg);
   }
 }
 /*# sourceMappingURL=main.css.map */

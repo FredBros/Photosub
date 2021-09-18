@@ -1,0 +1,67 @@
+#home {
+  height: 100vh;
+  width: 100%;
+  background: center / cover no-repeat url(/ressources/img/accueil-md.jpg);
+
+  .home-content {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 200px;
+    text-align: center;
+    p{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+  }
+  .home-title {
+    padding-bottom: 50px;
+  }
+  @media screen and (min-width: 992px) {
+    background-image: url(/ressources/img/accueil.jpg);
+  }
+}
+
+.index-section {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: center / cover no-repeat;
+  background-image: url(/ressources/img/equipe-md.jpg);
+  article {
+    width: 80%;
+    margin: auto 0;
+    background-color: white;
+    margin: 0 auto;
+    padding: 24px 20px;
+  }
+  .btn-plus {
+    margin: 15px auto 0 auto;
+    height: 40px;
+    width: 40px;
+  }
+  h2 {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+}
+#team {
+  background-image: url(/ressources/img/equipe-md.jpg);
+  @media screen and (min-width: 992px) {
+    background-image: url(/ressources/img/equipe.jpg);
+  }
+}
+#work {
+  background-image: url(/ressources/img/activites-md.jpg);
+  @media screen and (min-width: 992px) {
+    background-image: url(/ressources/img/activites.jpg);
+  }
+}
+#news {
+  background-image: url(/ressources/img/news-md.jpg);
+  @media screen and (min-width: 992px) {
+    background-image: url(/ressources/img/news.jpg);
+  }
+}
+
+

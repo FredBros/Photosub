@@ -21,7 +21,7 @@ nav {
     width: 100%;
 
     li {
-      padding: 3px 0;
+      padding: 10px 0;
       cursor: pointer;
       text-align: center;
       &:hover {
@@ -44,7 +44,7 @@ nav {
       width: 100%;
     }
     .logo {
-      min-width: 28%;
+      padding-top: 25px;
     }
 
     .nav-menu {
