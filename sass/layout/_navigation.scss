@@ -1,5 +1,6 @@
 nav {
   position: fixed;
+  z-index: 100;
   width: 100%;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.95);
@@ -14,7 +15,7 @@ nav {
     padding-top: 8px;
   }
   .logo {
-    padding: 15px 30px 15px 0;
+    padding: 1rem 2rem 1rem 0;
   }
   .nav-menu {
     display: none;
@@ -44,7 +45,7 @@ nav {
       width: 100%;
     }
     .logo {
-      padding-top: 25px;
+      padding: 0.6rem 1.5rem 0.8rem 0;
     }
 
     .nav-menu {

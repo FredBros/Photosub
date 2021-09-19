@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
     <title>PhotoSub Nouméa</title>
-    <link rel="stylesheet" href="/sass/main.css" />
-    
+    <link rel="stylesheet" href="/sass/splide.min.css">
+    <link rel="stylesheet" href="/sass/main.css" />    
   </head>
   <body>
     <header>
@@ -21,7 +21,7 @@
           <li class="nav-item" id="btn-home" onclick="scrollFromMenu(0)">Accueil</li>
           <li id="btn-team" class="nav-item" onclick="scrollFromMenu(1)">L'équipe</li>
           <li id="btn-work" class="nav-item" onclick="scrollFromMenu(2)">Activités</li>
-          <li id="btn-news" class="nav-item" onclick="scrollFromMenu(3)">Actualité</li>
+          <li id="btn-news" class="nav-item" onclick="scrollFromMenu(3)">Actualités</li>
           <li id="btn-gallery" class="nav-item" onclick="scrollFromMenu(4)">Gallerie</li>
           <li id="btn-contact" class="nav-item"><a href="#contact"></a>Contact</li>
           <li class="nav-item"><a href="#">Evènements</a></li>
@@ -33,14 +33,14 @@
       </nav>
     </header>
     <main>
-      <section id="home">
+      <section id="home" class="scroll-snap-align" >
         <div class="home-content">
           <h1 class="home-title">Photo-sub Nouméa</h1>
           <p class="home-welcome"></p>
           <p class= "home-p">L'association des amoureux de la photographie sous-marine de Nouvelle Calédonie</p>
         </div>
       </section>
-      <section id="team" class="index-section">
+      <section id="team" class="index-section scroll-snap-align">
         <article class="team-container">
           <div class="team-content article-content">
             <h2 class="team-title">l'équipe</h1>
@@ -50,7 +50,7 @@
           </div>
         </article>
       </section>
-      <section id="work" class="index-section">
+      <section id="work" class="index-section scroll-snap-align">
         <article class="work-container">
           <div class="work-content article-content">
             <h2 class="work-title">nos activités</h1>
@@ -60,7 +60,7 @@
           </div>
         </article>
       </section>
-      <section id="news" class="index-section">
+      <section id="news" class="index-section scroll-snap-align">
         <article class="news-container">
           <div class="news-content article-content">
             <h2 class="news-title">Actualités</h1>
@@ -71,26 +71,28 @@
           </div>
         </article>
       </section>
-      <section id="gallery">
-        <div class="gallery-container">
-          
-        </div>
-      </section>
-      <section id="gallery">
-        <div class="splide">
+      <section id="gallery" class="scroll-snap-align splide">
           <div class="splide__track">
             <ul class="splide__list">
-              <li class="splide__slide"><img src="./ressources/img/gallery1-md.jpg" alt=""></li>
-              <li class="splide__slide"><img src="./ressources/img/gallery2-md.jpg" alt=""></li>
-              <li class="splide__slide"><img src="./ressources/img/gallery3-md.jpg" alt=""></li>
+              <li class="splide__slide"><img srcset="./ressources/img/thumb/gallery1.jpg 450w, ./ressources/img/md/gallery1-md.jpg 1000w, ./ressources/img/gallery1.jpg 1680w" alt=""></li>
+              <li class="splide__slide"><img srcset="./ressources/img/thumb/gallery2.jpg 450w, ./ressources/img/md/gallery2-md.jpg 1000w, ./ressources/img/gallery2.jpg 1680w" alt=""></li>
+              <li class="splide__slide"><img srcset="./ressources/img/thumb/gallery3.jpg 450w, ./ressources/img/md/gallery3-md.jpg 1000w, ./ressources/img/gallery3.jpg 1680w" alt=""></li>
+              <li class="splide__slide"><img srcset="./ressources/img/thumb/gallery4.jpg 450w, ./ressources/img/md/gallery4-md.jpg 1000w, ./ressources/img/gallery4.jpg 1680w" alt=""></li>
+              <li class="splide__slide"><img srcset="./ressources/img/thumb/gallery5.jpg 450w, ./ressources/img/md/gallery5-md.jpg 1000w, ./ressources/img/gallery5.jpg 1680w" alt=""></li>
+              <li class="splide__slide"><img srcset="./ressources/img/thumb/gallery6.jpg 450w, ./ressources/img/md/gallery6-md.jpg 1000w, ./ressources/img/gallery6.jpg 1680w" alt=""></li>
+              <li class="splide__slide"><img srcset="./ressources/img/thumb/gallery7.jpg 450w, ./ressources/img/md/gallery7-md.jpg 1000w, ./ressources/img/gallery7.jpg 1680w" alt=""></li>
+              <li class="splide__slide"><img srcset="./ressources/img/thumb/news.jpg 450w, ./ressources/img/md/news-md.jpg 1000w, ./ressources/img/news.jpg 1680w" alt=""></li>
+              <li class="splide__slide"><img srcset="./ressources/img/thumb/accueil.jpg 450w, ./ressources/img/md/accueil-md.jpg 1000w, ./ressources/img/accueil.jpg 1680w" alt=""></li>
+              <li class="splide__slide"><img srcset="./ressources/img/thumb/contact.jpg 450w, ./ressources/img/md/contact-md.jpg 1000w, ./ressources/img/contact.jpg 1680w" alt=""></li>
+              <li class="splide__slide"><img srcset="./ressources/img/thumb/activites.jpg 450w, ./ressources/img/md/activites-md.jpg 1000w, ./ressources/img/activites.jpg 1680w" alt=""></li>
+              <li class="splide__slide"><img srcset="./ressources/img/thumb/equipe.jpg 450w, ./ressources/img/md/equipe-md.jpg 1000w, ./ressources/img/equipe.jpg 1680w" alt=""></li>
             </ul>
           </div>
-        </div>
       </section>
 
 
     </main>
-
+    <script src="/js/splide.min.js"></script>
     <script src="/js/index.js"></script>
   </body>
 </html>

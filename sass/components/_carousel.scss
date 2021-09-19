@@ -1,0 +1,12 @@
+.splide {
+  height: 100vh;
+  background-color: rgb(189, 189, 189);
+
+  .splide__slide {
+  }
+  img {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+  }
+}

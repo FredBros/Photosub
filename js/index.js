@@ -42,5 +42,9 @@ function scrollFromMenu(e){
 // 
 
 document.addEventListener( 'DOMContentLoaded', function () {
-	new Splide( '#image-slider' ).mount();
+    new Splide( '.splide',{
+        type : 'loop',
+        cover  : true,
+        height : '100vh',
+    } ).mount();
 } );

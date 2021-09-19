@@ -108,6 +108,7 @@ p {
 header .logo {
   font-weight: 900;
   font-size: 0.8rem;
+  line-height: 1.2rem;
   letter-spacing: -0.05em;
 }
 
@@ -117,6 +118,7 @@ main #home {
 
 nav {
   position: fixed;
+  z-index: 100;
   width: 100%;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.95);
@@ -133,7 +135,7 @@ nav #nav-icon {
 }
 
 nav .logo {
-  padding: 15px 30px 15px 0;
+  padding: 1rem 2rem 1rem 0;
 }
 
 nav .nav-menu {
@@ -167,7 +169,7 @@ nav .display-on {
     width: 100%;
   }
   nav .logo {
-    padding-top: 25px;
+    padding: 0.6rem 1.5rem 0.8rem 0;
   }
   nav .nav-menu {
     display: -webkit-box;
@@ -188,10 +190,31 @@ nav .display-on {
   }
 }
 
+.splide {
+  height: 100vh;
+  background-color: #bdbdbd;
+}
+
+.splide img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+}
+
+html {
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+.scroll-snap-align {
+  scroll-snap-align: start;
+}
+
 #home {
   height: 100vh;
   width: 100%;
-  background: center/cover no-repeat url(/ressources/img/accueil-md.jpg);
+  background: center/cover no-repeat url(/ressources/img/md/accueil-md.jpg);
 }
 
 #home .home-content {
@@ -226,7 +249,6 @@ nav .display-on {
   height: 100vh;
   width: 100%;
   background: center / cover no-repeat;
-  background-image: url(/ressources/img/equipe-md.jpg);
 }
 
 .index-section article {
@@ -249,7 +271,7 @@ nav .display-on {
 }
 
 #team {
-  background-image: url(/ressources/img/equipe-md.jpg);
+  background-image: url(/ressources/img/md/equipe-md.jpg);
 }
 
 @media screen and (min-width: 992px) {
@@ -259,7 +281,7 @@ nav .display-on {
 }
 
 #work {
-  background-image: url(/ressources/img/activites-md.jpg);
+  background-image: url(/ressources/img/md/activites-md.jpg);
 }
 
 @media screen and (min-width: 992px) {
@@ -269,7 +291,7 @@ nav .display-on {
 }
 
 #news {
-  background-image: url(/ressources/img/news-md.jpg);
+  background-image: url(/ressources/img/md/news-md.jpg);
 }
 
 @media screen and (min-width: 992px) {
