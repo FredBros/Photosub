@@ -312,7 +312,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: rgba(185, 186, 187, 0.5);
+  color: #B9B9BA;
 }
 
 footer .social {
@@ -331,8 +331,15 @@ footer .social {
 }
 
 footer img {
-  height: 1.1rem;
-  width: 1.1rem;
+  height: 1.2rem;
+  width: 1.2rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+footer img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .splide {
@@ -357,16 +364,20 @@ footer img {
   width: 7rem;
   margin: 0 auto;
   border: none;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
 }
 
 .btn-form:hover {
   background-color: #a9cea4;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .btn-form:active {
   background-color: #71926e;
+  -webkit-transform: none;
+          transform: none;
 }
 
 html {
@@ -407,29 +418,58 @@ html {
 }
 
 .index-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
   height: 100vh;
   width: 100%;
   background: center / cover no-repeat;
 }
 
 .index-section article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 80%;
-  margin: auto 0;
   background-color: white;
-  margin: 0 auto;
   padding: 24px 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .index-section article {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .index-section .article-right {
+    left: auto;
+    right: 0;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .index-section .article-left {
+    left: 0;
+    right: auto;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
 }
 
 .index-section .btn-plus {
   margin: 15px auto 0 auto;
   height: 40px;
   width: 40px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.index-section .btn-plus:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .index-section h2 {

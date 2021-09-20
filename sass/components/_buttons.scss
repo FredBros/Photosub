@@ -8,13 +8,14 @@
     width: 7rem;
     margin: 0 auto;
     border: none;
-    transition-duration: 500ms;
+    transition-duration: 300ms;
 
     &:hover{
         background-color:  #a9cea4;
+        transform: scale(1.1);
     }
     &:active{
-    background-color: #71926e
-   
+    background-color: #71926e;
+    transform: none;   
     }
 }
