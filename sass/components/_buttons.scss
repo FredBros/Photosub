@@ -1,0 +1,20 @@
+.btn-form{
+    background-color: #98c593;
+    color: white;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: 3rem;
+    border-radius: 2rem;
+    width: 7rem;
+    margin: 0 auto;
+    border: none;
+    transition-duration: 500ms;
+
+    &:hover{
+        background-color:  #a9cea4;
+    }
+    &:active{
+    background-color: #71926e
+   
+    }
+}

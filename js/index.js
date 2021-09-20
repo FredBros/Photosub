@@ -14,21 +14,6 @@ window.addEventListener('click', function(e){
 });
 
 
-// 
-// NAVBAR SCROLL
-//
-// const navItems = document.getElementsByClassName('nav-item');
-// console.log (navItems);
-
-
-
-// Array.from(navItems).forEach(function(element, i) {
-//     element.addEventListener('click', (e) => {
-//         const btn = Array.prototype.indexOf.call(navItems,e);
-//         console.log (e);
-        
-//     });
-// });
 
 function scrollFromMenu(e){
     let scrollY = e * window.innerHeight;

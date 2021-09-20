@@ -23,13 +23,12 @@
           <li id="btn-work" class="nav-item" onclick="scrollFromMenu(2)">Activités</li>
           <li id="btn-news" class="nav-item" onclick="scrollFromMenu(3)">Actualités</li>
           <li id="btn-gallery" class="nav-item" onclick="scrollFromMenu(4)">Gallerie</li>
-          <li id="btn-contact" class="nav-item"><a href="#contact"></a>Contact</li>
+          <li id="btn-contact" class="nav-item" onclick="scrollFromMenu(5)">Contact</li>
           <li class="nav-item"><a href="#">Evènements</a></li>
         </ul>
       </div>
-        <a href="#" id="nav-icon"
-          ><img src="./ressources/icon/bars-solid.svg" alt="menu"
-        /></a>
+       <div id="nav-icon"><img src="./ressources/icon/bars-solid.svg" alt="menu"
+        /></div>
       </nav>
     </header>
     <main>
@@ -88,6 +87,40 @@
               <li class="splide__slide"><img srcset="./ressources/img/thumb/equipe.jpg 450w, ./ressources/img/md/equipe-md.jpg 1000w, ./ressources/img/equipe.jpg 1680w" alt=""></li>
             </ul>
           </div>
+      </section>
+      <section id="contact" class="scroll-snap-align">
+        <div class="contact-container">
+        <h2 class="contact-titre">Un petit mot ?</h2>
+        <p>Quidem eos veniam eaque consectetur, saepe deleniti molestias.</p>
+        <form class="contact-form" action="" method="post">
+          <div class="form-name-mail-container">
+            <div class="form-name">
+            <label for="name">nom</label><br>
+            <input type="text" name="name" id="name" required>
+          </div>
+          <div class="form-email">
+            <label for="email">email </label><br>
+            <input type="email" name="email" id="email" required>
+          </div> 
+          </div>
+          <div class="form-msg">
+            <label for="msg">message</label><br>
+            <textarea name="msg" id="msg" required> 
+            </textarea>
+          </div>
+          <button type="submit" class="btn-form">Envoi</button>
+        </form>
+      </div>
+      <footer>
+          <ul class="social">
+            <li><a href="#"><img src="./ressources/icon/facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="./ressources/icon/instagram.png" alt="instagram"></a></li>
+            <li><a href="#"><img src="./ressources/icon/twitter-1-64.png" alt="twitter"></a></li>
+            <li><a href="#"><img src="./ressources/icon/youtube.png" alt="youtube"></a></li>
+            <li><a href="#"><img src="./ressources/icon/whatsapp.png" alt="whatsapp"></a></li>
+          </ul>
+          <p class="copyright">@ c0d3 w/ &lt3</p>
+      </footer>
       </section>
 
 

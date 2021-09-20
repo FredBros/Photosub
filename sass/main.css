@@ -130,8 +130,10 @@ nav #nav-icon {
   position: absolute;
   top: 5px;
   right: 10px;
-  width: 20px;
-  padding-top: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  cursor: pointer;
 }
 
 nav .logo {
@@ -190,9 +192,152 @@ nav .display-on {
   }
 }
 
+#contact {
+  background-color: #dfdfdf;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#contact .contact-container {
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+#contact h2 {
+  padding-bottom: 30px;
+}
+
+#contact p {
+  max-width: 80%;
+  text-align: center;
+}
+
+#contact .contact-form {
+  width: 80%;
+  max-width: 900px;
+  height: 100%;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  padding: 5px;
+  border: 2px solid #dfdfdf;
+  border-radius: 5px;
+}
+
+#contact .contact-form input:focus,
+#contact .contact-form textarea:focus {
+  border: 3px solid #a1a1a1;
+  outline: none;
+}
+
+#contact .contact-form .form-name-mail-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contact .contact-form .form-name-mail-container div {
+  width: 45%;
+}
+
+#contact .contact-form .form-name-mail-container input {
+  width: 100%;
+}
+
+#contact .contact-form .form-msg {
+  height: 80%;
+}
+
+#contact .contact-form .form-msg textarea {
+  width: 100%;
+  height: 80%;
+}
+
+footer {
+  padding: 30px 20px;
+  background-color: #39454b;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(185, 186, 187, 0.5);
+}
+
+footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+footer img {
+  height: 1.1rem;
+  width: 1.1rem;
+}
+
 .splide {
   height: 100vh;
-  background-color: #bdbdbd;
+  background-color: #dfdfdf;
 }
 
 .splide img {
@@ -200,6 +345,28 @@ nav .display-on {
   top: 50%;
   -webkit-transform: translatey(-50%);
           transform: translatey(-50%);
+}
+
+.btn-form {
+  background-color: #98c593;
+  color: white;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 3rem;
+  border-radius: 2rem;
+  width: 7rem;
+  margin: 0 auto;
+  border: none;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.btn-form:hover {
+  background-color: #a9cea4;
+}
+
+.btn-form:active {
+  background-color: #71926e;
 }
 
 html {
