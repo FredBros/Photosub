@@ -1,3 +1,4 @@
+.main-events{
 .event-container{
   background-color: #DFDFDF;
   max-width: 1000px;
@@ -21,7 +22,7 @@
         transform: scale(1.05);
       }   
   }
-.event-items img{ 
+.event-items img{
       width: 100%;
       height: auto;
       object-fit: cover;     
@@ -37,4 +38,5 @@ h3{
   display: inline-block;
   padding: 5px 10px;
   margin: 5px ;
+}
 }
