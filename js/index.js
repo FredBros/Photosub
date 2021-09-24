@@ -49,13 +49,17 @@ document.addEventListener("DOMContentLoaded", function () {
 const articles = document.querySelectorAll(".index-section article");
 const form = document.querySelector("form");
 const footer = document.querySelector("footer");
-
+//
 // Test resize Trigger
+//
 window.addEventListener("resize", resetArticleTransformForSmartphone);
 function resetArticleTransformForSmartphone() {
   if (window.innerWidth < 768) {
     // Smartphone mode
+    //(Si on réduit la fenetre en mode Smartphone portrait, on reset les animations Transform.)
     articles.forEach((e) => (e.style.transform = "none"));
+    form.style.transform = "none";
+
   } else {
     // Large screen Mode
     articles.forEach((e) => checkArticlePosition(e));

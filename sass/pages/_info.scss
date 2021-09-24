@@ -1,0 +1,40 @@
+// dfdfdf
+main {
+  background-color: #dfdfdf;
+  padding: 60px 10px 20px 10px;
+  @media only screen and (min-width: 768px) {
+    padding-top: 100px;
+  }
+  @media only screen and (min-width: 992px) {
+    padding-top: 110px;
+  }
+}
+.info-container {
+  max-width: 1000px;
+  margin: auto;
+}
+.info-card {
+background-color: #fff;
+  border: solid 2px #39454b;
+  border-radius: 6px;
+  padding: 20px;
+  
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+ }
+}
+h1{
+    text-transform: uppercase; 
+    text-align: center;
+}
+img {
+  max-width: 100%;
+}
+.float-r {
+  float: right;
+}
+.float-l{
+    float: left;
+}
