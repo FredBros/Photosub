@@ -1,0 +1,19 @@
+main{
+    padding: 60px 24px 24px;
+    @media only screen and (min-width: 768px) {
+        padding-top: 80px;
+      }
+      @media only screen and (min-width: 992px) {
+        padding-top: 90px;
+  }
+}
+  .event-items{
+      border: solid 3px #39454B ;
+      border-radius: 6px;
+      margin: 5px;
+      padding: 10px;
+  }
+.event-item1 img{
+    width: 100%;
+    height: auto; 
+}

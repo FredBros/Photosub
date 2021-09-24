@@ -100,6 +100,13 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-size: 1.2rem;
+  letter-spacing: -0.05em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 p {
   line-height: 1.5em;
   letter-spacing: 0.04em;
@@ -386,6 +393,7 @@ footer img:hover {
 html {
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 .scroll-snap-align {
@@ -445,8 +453,8 @@ html {
   width: 80%;
   background-color: white;
   padding: 24px 20px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 @media only screen and (min-width: 768px) {
@@ -477,8 +485,8 @@ html {
   margin: 15px auto 0 auto;
   height: 40px;
   width: 40px;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .index-section .btn-plus:hover {
@@ -519,5 +527,33 @@ html {
   #news {
     background-image: url(/ressources/img/news.jpg);
   }
+}
+
+main {
+  padding: 60px 24px 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  main {
+    padding-top: 90px;
+  }
+}
+
+.event-items {
+  border: solid 3px #39454B;
+  border-radius: 6px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.event-item1 img {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=main.css.map */

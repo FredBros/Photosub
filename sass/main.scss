@@ -1,7 +1,5 @@
 @import './utils/variables';
 @import './base/reset', './base/typography';
-@import './layout/navigation', './layout/forms', './layout/footer' ;
+@import './layout/navigation', './layout/forms', './layout/footer', './layout/grid' ;
 @import './components/carousel', './components/buttons';
-@import './pages/index';
-
-
+@import './pages/index', './pages/events';

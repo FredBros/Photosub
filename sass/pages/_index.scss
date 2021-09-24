@@ -1,7 +1,8 @@
-html{
-	scroll-snap-type: y mandatory;
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
-.scroll-snap-align{
+.scroll-snap-align {
   scroll-snap-align: start;
 }
 
@@ -15,9 +16,9 @@ html{
     margin: 0 auto;
     padding-top: 200px;
     text-align: center;
-    p{
-        max-width: 600px;
-        margin: 0 auto;
+    p {
+      max-width: 600px;
+      margin: 0 auto;
     }
   }
   .home-title {
@@ -28,27 +29,21 @@ html{
   }
 }
 
-.index-section {  
+.index-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  // position: relative;
   height: 100vh;
   width: 100%;
   background: center / cover no-repeat;
   @media only screen and (min-width: 768px) {
     position: relative;
   }
-  article{
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
-
+  article {
     width: 80%;
     background-color: white;
     padding: 24px 20px;
-    transition: all .5s;
+    transition: all 0.5s;
     @media only screen and (min-width: 768px) {
       position: absolute;
       width: 60%;
@@ -56,38 +51,27 @@ html{
       transform: translate(0, -50%);
     }
   }
-  .article-right{
+  .article-right {
     @media only screen and (min-width: 768px) {
       left: auto;
       right: -60%;
-      // transform: translateY(-50%);
     }
   }
-  .article-left{
+  .article-left {
     @media only screen and (min-width: 768px) {
       left: -60%;
       right: auto;
-      // transform: translateY(-50%);
     }
   }
-  // .in-from-right{
-  //   transform: translateX(-60%);
-  // }
-  // .in-from-left{
-  //   transform: translateX(60%);
-  // }
-  // .disappear{
-  //   transform: translatex(0);
-  // }
-  
+
   .btn-plus {
     margin: 15px auto 0 auto;
     height: 40px;
     width: 40px;
-    transition: all .2s;
+    transition: all 0.2s;
     &:hover {
-    transform: scale(1.2);}
-
+      transform: scale(1.2);
+    }
   }
   h2 {
     padding-bottom: 20px;
