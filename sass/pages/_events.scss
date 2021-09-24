@@ -1,19 +1,40 @@
-main{
+.event-container{
+  background-color: #DFDFDF;
+  max-width: 1000px;
+  margin: 0 auto;
     padding: 60px 24px 24px;
     @media only screen and (min-width: 768px) {
-        padding-top: 80px;
+        padding-top: 100px;
       }
       @media only screen and (min-width: 992px) {
-        padding-top: 90px;
+        padding-top: 110px;
   }
 }
   .event-items{
       border: solid 3px #39454B ;
       border-radius: 6px;
       margin: 5px;
-      padding: 10px;
+      padding: 10px; 
+      background-color: #fff;  
+      transition: all .2s ease-in-out;
+      &:hover{
+        transform: scale(1.05);
+      }   
   }
-.event-item1 img{
-    width: 100%;
-    height: auto; 
+.event-items img{ 
+      width: 100%;
+      height: auto;
+      object-fit: cover;     
+}
+.event-item1{
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+h3{
+  background-color: rgb(0, 126, 126);
+  border-radius: 12px;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px ;
 }
