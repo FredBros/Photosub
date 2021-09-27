@@ -44,6 +44,18 @@ window.addEventListener("scroll", () => {
   }
 });
 
+//Test Onload Trigger :
+// Article & Form in out
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    checkFormPosition();
+    articles.forEach((e) => checkArticlePosition(e));
+  }
+});
+
+//
+//  In & Out Article effect
+//
 function checkArticlePosition(article) {
   let fromTop = article.getBoundingClientRect().top;
   let hWindow = window.innerHeight;
@@ -64,7 +76,7 @@ function articleOut(article) {
 }
 
 //
-// In & Out Form Scrolling effect
+// In & Out Form effect
 //
 function checkFormPosition() {  
   let fromTop = footer.getBoundingClientRect().top;
@@ -76,3 +88,4 @@ function checkFormPosition() {
     form.style.transform = "translate(0, 100%)";
   }
 }
+

@@ -9,11 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
     <link rel="stylesheet" href="sass/splide.min.css">
-    <link rel="stylesheet" href="sass/main.css" />    
-    <!-- <link rel="stylesheet" href="sass/main.css"> -->
+    <link rel="stylesheet" href="sass/main.css">
     <title>PhotoSub Nouméa</title>
   </head>
   <body>
+    
     <header>
       <nav>
         <div class="nav-list">
@@ -34,7 +34,15 @@
       
     </header>
     <main>
-      <section id="home" class="scroll-snap-align" >
+      <div class="placeholder-img"></div>
+      <img class="index-img-background-placeholder" srcset="ressources/img/md/accueil-md.jpg 1000w, ressources/img/accueil.jpg 1660w" alt="">
+      <img class="index-img-background-placeholder" srcset="ressources/img/md/equipe-md.jpg 1000w, ressources/img/equipe.jpg 1660w" alt="">
+      <img class="index-img-background-placeholder" srcset="ressources/img/md/activites-md.jpg 1000w, ressources/img/activites.jpg 1660w" alt="">
+      <img class="index-img-background-placeholder" srcset="ressources/img/md/news-md.jpg 1000w, ressources/img/news.jpg 1660w" alt="">
+    </div>
+
+
+      <section id="home" class="scroll-snap-align">
         <div class="home-content">
           <h1 class="home-title">Photo-sub Nouméa</h1>
           <p class="home-welcome"></p>
@@ -42,6 +50,7 @@
         </div>
       </section>
       <section id="team" class="index-section scroll-snap-align">
+
         <article class="article-index article-right">
           <div class="team-content article-content">
             <h2 class="team-title">l'équipe</h1>
@@ -52,6 +61,7 @@
         </article>
       </section>
       <section id="work" class="index-section scroll-snap-align">
+
         <article class="article-index article-left">
           <div class="work-content article-content">
             <h2 class="work-title">nos activités</h1>
@@ -62,6 +72,7 @@
         </article>
       </section>
       <section id="news" class="index-section scroll-snap-align">
+
         <article class="article-index article-right">
           <div class="news-content article-content">
             <h2 class="news-title">Actualités</h1>
@@ -75,18 +86,18 @@
       <section id="gallery" class="scroll-snap-align splide">
           <div class="splide__track">
             <ul class="splide__list">
-              <li class="splide__slide"><img srcset="ressources/img/thumb/gallery1.jpg 450w, ressources/img/md/gallery1-md.jpg 1000w, ressources/img/gallery1.jpg 1680w" alt=""></li>
-              <li class="splide__slide"><img srcset="ressources/img/thumb/gallery2.jpg 450w, ressources/img/md/gallery2-md.jpg 1000w, ressources/img/gallery2.jpg 1680w" alt=""></li>
-              <li class="splide__slide"><img srcset="ressources/img/thumb/gallery3.jpg 450w, ressources/img/md/gallery3-md.jpg 1000w, ressources/img/gallery3.jpg 1680w" alt=""></li>
-              <li class="splide__slide"><img srcset="ressources/img/thumb/gallery4.jpg 450w, ressources/img/md/gallery4-md.jpg 1000w, ressources/img/gallery4.jpg 1680w" alt=""></li>
-              <li class="splide__slide"><img srcset="ressources/img/thumb/gallery5.jpg 450w, ressources/img/md/gallery5-md.jpg 1000w, ressources/img/gallery5.jpg 1680w" alt=""></li>
-              <li class="splide__slide"><img srcset="ressources/img/thumb/gallery6.jpg 450w, ressources/img/md/gallery6-md.jpg 1000w, ressources/img/gallery6.jpg 1680w" alt=""></li>
-              <li class="splide__slide"><img srcset="ressources/img/thumb/gallery7.jpg 450w, ressources/img/md/gallery7-md.jpg 1000w, ressources/img/gallery7.jpg 1680w" alt=""></li>
-              <li class="splide__slide"><img srcset="ressources/img/thumb/news.jpg 450w, ressources/img/md/news-md.jpg 1000w, ressources/img/news.jpg 1680w" alt=""></li>
-              <li class="splide__slide"><img srcset="ressources/img/thumb/accueil.jpg 450w, ressources/img/md/accueil-md.jpg 1000w, ressources/img/accueil.jpg 1680w" alt=""></li>
-              <li class="splide__slide"><img srcset="ressources/img/thumb/contact.jpg 450w, ressources/img/md/contact-md.jpg 1000w, ressources/img/contact.jpg 1680w" alt=""></li>
-              <li class="splide__slide"><img srcset="ressources/img/thumb/activites.jpg 450w, ressources/img/md/activites-md.jpg 1000w, ressources/img/activites.jpg 1680w" alt=""></li>
-              <li class="splide__slide"><img srcset="ressources/img/thumb/equipe.jpg 450w, ressources/img/md/equipe-md.jpg 1000w, ressources/img/equipe.jpg 1680w" alt=""></li>
+              <li class="splide__slide"><img loading="lazy" srcset="ressources/img/thumb/gallery1.jpg 450w, ressources/img/md/gallery1-md.jpg 1000w, ressources/img/gallery1.jpg 1680w"  alt=""></li>
+              <li class="splide__slide"><img loading="lazy" srcset="ressources/img/thumb/gallery2.jpg 450w, ressources/img/md/gallery2-md.jpg 1000w, ressources/img/gallery2.jpg 1680w"  alt=""></li>
+              <li class="splide__slide"><img loading="lazy" srcset="ressources/img/thumb/gallery3.jpg 450w, ressources/img/md/gallery3-md.jpg 1000w, ressources/img/gallery3.jpg 1680w"  alt=""></li>
+              <li class="splide__slide"><img loading="lazy" srcset="ressources/img/thumb/gallery4.jpg 450w, ressources/img/md/gallery4-md.jpg 1000w, ressources/img/gallery4.jpg 1680w"  alt=""></li>
+              <li class="splide__slide"><img loading="lazy" srcset="ressources/img/thumb/gallery5.jpg 450w, ressources/img/md/gallery5-md.jpg 1000w, ressources/img/gallery5.jpg 1680w"  alt=""></li>
+              <li class="splide__slide"><img loading="lazy" srcset="ressources/img/thumb/gallery6.jpg 450w, ressources/img/md/gallery6-md.jpg 1000w, ressources/img/gallery6.jpg 1680w"  alt=""></li>
+              <li class="splide__slide"><img loading="lazy" srcset="ressources/img/thumb/gallery7.jpg 450w, ressources/img/md/gallery7-md.jpg 1000w, ressources/img/gallery7.jpg 1680w"  alt=""></li>
+              <li class="splide__slide"><img loading="lazy" srcset="ressources/img/thumb/news.jpg 450w, ressources/img/md/news-md.jpg 1000w, ressources/img/news.jpg 1680w"  alt=""></li>
+              <li class="splide__slide"><img loading="lazy" srcset="ressources/img/thumb/accueil.jpg 450w, ressources/img/md/accueil-md.jpg 1000w, ressources/img/accueil.jpg 1680w"  alt=""></li>
+              <li class="splide__slide"><img loading="lazy" srcset="ressources/img/thumb/contact.jpg 450w, ressources/img/md/contact-md.jpg 1000w, ressources/img/contact.jpg 1680w"  alt=""></li>
+              <li class="splide__slide"><img loading="lazy" srcset="ressources/img/thumb/activites.jpg 450w, ressources/img/md/activites-md.jpg 1000w, ressources/img/activites.jpg 1680w" alt=""></li>
+              <li class="splide__slide"><img loading="lazy" srcset="ressources/img/thumb/equipe.jpg 450w, ressources/img/md/equipe-md.jpg 1000w, ressources/img/equipe.jpg 1680w"  alt=""></li>
             </ul>
           </div>
       </section>
